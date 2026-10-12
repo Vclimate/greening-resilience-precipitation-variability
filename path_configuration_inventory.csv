@@ -1,0 +1,18 @@
+﻿file,line,author_machine_path_to_adapt
+code/ERA5_all_covariates_bilinear_005_GEE.js,47,// Matches D:/Code_Model/19636059/ForestResilience/VPD/cal_VPD/cal_VPD.m.
+code/analyse_plot_QA01_unified22_20261005.py,33,C:/Users/user/.local/share/cartopy/shapefiles/natural_earth/physical
+code/analyse_plot_QA01_unified22_20261005.py,34,C:/Users/user/AppData/Local/cartopy/shapefiles/natural_earth/physical
+code/audit_GEE_exports_pre_RF.py,24,C:/Users/user/Downloads/JRS_ERA5_all_bilinear_005_recomputed
+code/audit_GEE_exports_pre_RF.py,25,C:/Users/user/Downloads/JRS_nonERA5_public_005_recomputed
+code/audit_local_MOD13C1_inputs_20261003.py,12,D:\数据集\JRS_MOD13C1_NDVI_EVI_QA_16day_005deg_20261003
+code/compare_complete_new_lag1_TAC_20261001.py,21,C:/Users/user/Downloads/KNDVI_TAC_lag1_5year_window_from_MOD13C1_005deg
+code/compare_new_lag1_TAC_20260928.py,18,C:/Users/user/Downloads
+code/prepare_Fig1_original_intervals_QA01_20261005.py,116,D:/papaer4/paper4全球植被恢复力/论文绘图所用数据/FIG1/Fig1_V5.m
+code/prepare_Fig1_original_intervals_QA01_20261005.py,117,D:/papaer4/paper4全球植被恢复力/论文绘图所用数据/FIG2/森林非森林年际变化数据生成_IGBP_Xavg.mlx
+code/prepare_Fig1_original_intervals_QA01_20261005.py,42,D:/papaer4/20260604返修补实验/input/GEE_recomputed_20260927/RF_input_manifest_22.json
+code/prepare_matlab_figure_inputs_QA01_20261005.py,13,D:/papaer4/paper4全球植被恢复力/论文绘图所用数据
+code/prepare_matlab_figure_inputs_QA01_20261005.py,88,D:/papaer4/20260604返修补实验/input/GEE_recomputed_20260927/RF_input_manifest_22.json
+code/remove_figure_production_notes_20261008.py,8,D:\papaer4\20260604返修补实验
+code/run_RF_QA01_spatial5_20261006.py,26,D:\papaer4\20260604返修补实验
+code/run_RF_QA01_spatial5_20261006.py,336,C:/Users/user/.local/share/cartopy/shapefiles/natural_earth/physical
+code/run_RF_QA01_spatial5_20261006.py,337,C:/Users/user/AppData/Local/cartopy/shapefiles/natural_earth/physical

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*credentials*
+*token*
+output/
+raw_data/
+*.joblib
+_codex_review/

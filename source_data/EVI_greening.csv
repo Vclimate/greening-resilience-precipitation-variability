@@ -1,0 +1,3 @@
+variant,vegetation,n_valid,significant_greening_pct,significant_browning_pct
+EVI,Forest,582550,38.34527807594627,5.928483647918982
+EVI,Non-forest,1308687,42.44632534810351,5.192345287230184

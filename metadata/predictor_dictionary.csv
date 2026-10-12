@@ -1,0 +1,23 @@
+﻿variable,units,period,source_filename,format,processing,current_note
+P,mm yr-1,2000-2023,ERA5Land_P_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+P_SI,1,1990-2023,ERA5Land_P_SI_1990_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+P_NIPV,1,1990-2023,ERA5Land_P_NIPV_1990_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+Ta,degC,2000-2023,ERA5Land_Ta_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+P_ET,mm yr-1,2000-2023,ERA5Land_P_ET_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+Rs,J m-2 day-1,2000-2023,ERA5Land_Rs_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+SM,m3 m-3,2000-2023,ERA5Land_SM_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+VPD,hPa,2000-2023,ERA5Land_VPD_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+WTD,,,global_wtd.mat,MAT,,
+Elevation,m,static,GMTED2010_mea7p5as_Elevation_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+Slope,degree,static,GMTED2010_mea7p5as_Slope_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+HFP,,,HFP_MASK.mat,MAT,,
+Clay,g kg-1,static,SoilGrids_Clay_0_200cm_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+Sand,g kg-1,static,SoilGrids_Sand_0_200cm_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+SOC,dg kg-1,static,SoilGrids_SOC_0_200cm_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+Nitrogen,cg kg-1,static,SoilGrids_Nitrogen_0_200cm_005deg_area_mean.tif,GeoTIFF,native metric then valid-area mean,
+Species,species richness estimate,,Species_georeferenced_nearest_005deg.tif,GeoTIFF,"Nearest neighbor from original georeferenced forest/nonforest rasters, merged by validity; no smoothing or zero-fill",
+kNDVI,,2000-2023,kndvi_MODIS_sum_stp_sw005.mat,MAT,,"Recomputed from QA01 local observations, overriding original input path"
+Forest_fraction,,,pfts_for_ts.mat,MAT,,
+dP,mm yr-2,2000-2023,ERA5Land_dP_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+dTa,degC yr-1,2000-2023,ERA5Land_dTa_2000_2023_005deg_bilinear.tif,GeoTIFF,native metric then bilinear,
+dkNDVI,,2000-2023,kndvi_MODIS_sum_stp_sw005.mat,MAT,,"Recomputed from QA01 local observations, overriding original input path"

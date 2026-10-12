@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "original_input_hash_unchanged": true,
+  "all10_fold_metrics_recomputed": true,
+  "exactly_one_OOF_prediction_per_pixel": true,
+  "representative_models_restored": 2,
+  "folds": [
+    {
+      "vegetation": "Forest",
+      "fold": 1,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": true
+    },
+    {
+      "vegetation": "Forest",
+      "fold": 2,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Forest",
+      "fold": 3,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Forest",
+      "fold": 4,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Forest",
+      "fold": 5,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Non-forest",
+      "fold": 1,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": true
+    },
+    {
+      "vegetation": "Non-forest",
+      "fold": 2,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Non-forest",
+      "fold": 3,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Non-forest",
+      "fold": 4,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    },
+    {
+      "vegetation": "Non-forest",
+      "fold": 5,
+      "metrics_verified": true,
+      "blocks_disjoint": true,
+      "restored_model_verified": false
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "candidate_count": 22,
+  "grid": {
+    "crs": "EPSG:4326",
+    "shape": [
+      2800,
+      7200
+    ],
+    "transform": [
+      0.05,
+      0,
+      -180,
+      0,
+      -0.05,
+      80
+    ]
+  },
+  "predictors": [
+    {
+      "variable": "P",
+      "relative_path": "ERA5/ERA5Land_P_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "mm yr-1",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "P_SI",
+      "relative_path": "ERA5/ERA5Land_P_SI_1990_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "1",
+      "period": "1990-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "P_NIPV",
+      "relative_path": "ERA5/ERA5Land_P_NIPV_1990_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "1",
+      "period": "1990-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Ta",
+      "relative_path": "ERA5/ERA5Land_Ta_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "degC",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "P_ET",
+      "relative_path": "ERA5/ERA5Land_P_ET_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "mm yr-1",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Rs",
+      "relative_path": "ERA5/ERA5Land_Rs_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "J m-2 day-1",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "SM",
+      "relative_path": "ERA5/ERA5Land_SM_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "m3 m-3",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "VPD",
+      "relative_path": "ERA5/ERA5Land_VPD_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "hPa",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "WTD",
+      "relative_path": "other_predictors/global_wtd.mat",
+      "format": "MAT",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "h5py dataset[:].T; then rows [200:3000], columns [:]"
+    },
+    {
+      "variable": "Elevation",
+      "relative_path": "nonERA5/GMTED2010_mea7p5as_Elevation_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "m",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Slope",
+      "relative_path": "nonERA5/GMTED2010_mea7p5as_Slope_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "degree",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "HFP",
+      "relative_path": "other_predictors/HFP_MASK.mat",
+      "format": "MAT",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "h5py dataset[:].T; then rows [200:3000], columns [:]"
+    },
+    {
+      "variable": "Clay",
+      "relative_path": "nonERA5/SoilGrids_Clay_0_200cm_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "g kg-1",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Sand",
+      "relative_path": "nonERA5/SoilGrids_Sand_0_200cm_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "g kg-1",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "SOC",
+      "relative_path": "nonERA5/SoilGrids_SOC_0_200cm_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "dg kg-1",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Nitrogen",
+      "relative_path": "nonERA5/SoilGrids_Nitrogen_0_200cm_005deg_area_mean.tif",
+      "format": "GeoTIFF",
+      "units": "cg kg-1",
+      "period": "static",
+      "processing": "native metric then valid-area mean",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "Species",
+      "relative_path": "corrections_20260927/Species_georeferenced_nearest_005deg.tif",
+      "format": "GeoTIFF",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop",
+      "processing": "Nearest neighbor from original georeferenced forest/nonforest rasters, merged by validity; no smoothing or zero-fill",
+      "units": "species richness estimate"
+    },
+    {
+      "variable": "kNDVI",
+      "relative_path": "other_predictors/kndvi_MODIS_sum_stp_sw005.mat",
+      "format": "MAT",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "h5py dataset[:].T; then rows [200:3000], columns [:]"
+    },
+    {
+      "variable": "Forest_fraction",
+      "relative_path": "other_predictors/pfts_for_ts.mat",
+      "format": "MAT",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "h5py dataset[:].T; then rows [200:3000], columns [:]"
+    },
+    {
+      "variable": "dP",
+      "relative_path": "ERA5/ERA5Land_dP_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "mm yr-2",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "dTa",
+      "relative_path": "ERA5/ERA5Land_dTa_2000_2023_005deg_bilinear.tif",
+      "format": "GeoTIFF",
+      "units": "degC yr-1",
+      "period": "2000-2023",
+      "processing": "native metric then bilinear",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "No transpose or crop"
+    },
+    {
+      "variable": "dkNDVI",
+      "relative_path": "other_predictors/kndvi_MODIS_sum_stp_sw005.mat",
+      "format": "MAT",
+      "target_shape": [
+        2800,
+        7200
+      ],
+      "python_alignment": "h5py dataset[:].T; then rows [200:3000], columns [:]"
+    }
+  ],
+  "note": "Supply actual paths in the working input manifest. kNDVI and dkNDVI are overridden by the current QA01 preparation."
+}

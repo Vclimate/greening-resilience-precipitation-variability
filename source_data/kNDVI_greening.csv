@@ -1,0 +1,3 @@
+variant,vegetation,n_valid,significant_greening_pct,significant_browning_pct
+kNDVI,Forest,582550,40.77185343278267,9.160882434129963
+kNDVI,Non-forest,1308687,40.71392121138408,7.936739958532163
