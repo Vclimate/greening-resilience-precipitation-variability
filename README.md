@@ -8,7 +8,6 @@ Scientific processing, analysis and plotting code, with small intermediate resul
 - `source_data/`: regional trajectories, OLS/HAC statistics, area fractions, RF summaries, VIF retention, PDP curves, lag/window/EVI comparisons, exploratory ENSO results, and spatial-validation tables.
 - `figure_inputs/`: compact MATLAB input arrays and the actual unscaled interval arrays used for the main figures.
 - `metadata/`: predictor definitions, input templates, recorded software versions and selected verification records.
-- `reference_matlab_code/`: original author plotting references, retained for provenance.
 - `scripts/`: lightweight integrity checks; these do not retrain models.
 
 ## Data and time conventions

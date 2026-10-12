@@ -318,33 +318,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6397,
-      "sha256": "131afbd705ff75f5aff84d96ce144ac68ac99905b336c06706c39a5bb9e69d96"
-    },
-    {
-      "path": "reference_matlab_code/FIG1/Fig1_V5.m",
-      "bytes": 12581,
-      "sha256": "2b0a3c19968d94f868ddd1db7922ec2debd390ae8ca0ac2545daddc42123ca9a"
-    },
-    {
-      "path": "reference_matlab_code/FIG2/\u4e0d\u540c\u6c14\u5019\u5206\u533a\u68ee\u6797\u548c\u975e\u68ee\u6797\u65f6\u95f4\u53d8\u5316\u66f2\u7ebf\u7ed8\u56fe.m",
-      "bytes": 3385,
-      "sha256": "095ec30b9554458745d4d73928c7cc33092476e601a83676bdd37be82b421853"
-    },
-    {
-      "path": "reference_matlab_code/FIG2/\u68ee\u6797\u975e\u68ee\u6797\u5e74\u9645\u53d8\u5316\u6570\u636e\u751f\u6210_IGBP_Xavg.mlx",
-      "bytes": 5356,
-      "sha256": "fb71572c03099604317a757872fc67862e2e1c2fbe4ce680f2bc85f2195929e8"
-    },
-    {
-      "path": "reference_matlab_code/FIG3/KNDVI_TAC\u53d8\u5316\u52a0\u7a7a\u5fc3\u997c\u56fe\u65b9\u5411\u7ed8\u56fev3.m",
-      "bytes": 8348,
-      "sha256": "79abe6fc8ae45240ab50352fa7ca1e590495b6f143eb975ec619585f707f90cf"
-    },
-    {
-      "path": "reference_matlab_code/FIG4/\u5206\u7c7b\u6a21\u578b_land_cover_PDP\u7ed8\u56fe.m",
-      "bytes": 13579,
-      "sha256": "87cbd7659d0063214106d318f66d804592b84ec910f21b84423ff753e79cfa58"
+      "bytes": 6306,
+      "sha256": "5d3eded739a0bb08e2321ee8886352dd8bf011abb239c3013eaeeb37ec9f7cea"
     },
     {
       "path": "requirements-recorded.txt",
