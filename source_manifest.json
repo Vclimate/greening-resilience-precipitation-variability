@@ -1,7 +1,7 @@
 {
   "title": "Greening-Resilience Decoupling and Precipitation Variability Across Global Vegetation",
   "snapshot": "2026-10-12",
-  "scientific_sources_byte_preserved": true,
+  "scientific_sources_byte_preserved": false,
   "local_modules": [
     "analyse_ENSO_monthly_QA01_20261006",
     "analyse_ENSO_tropical_only_20261006",
@@ -68,8 +68,8 @@
     },
     {
       "path": "code/audit_GEE_exports_pre_RF.py",
-      "bytes": 14259,
-      "sha256": "5c19872f393be013bdd78e0444936f4cc5bedf90098f0d645fdc1866cea66a2c"
+      "bytes": 14268,
+      "sha256": "78eb30d3d570412ea29747979a81c66e7a1ee75e468c72a37acfbb30962c443d"
     },
     {
       "path": "code/audit_local_MOD13C1_inputs_20261003.py",
@@ -222,9 +222,19 @@
       "sha256": "e4cbceff1baaae46c11579b26a66c4266e55646a74c8eb5ac9c49222216ac4a2"
     },
     {
+      "path": "code/rf_support/README.md",
+      "bytes": 812,
+      "sha256": "12bae429f46388ec7424547aee188023500aec72cc807138891210e34caeb787"
+    },
+    {
+      "path": "code/rf_support/run_rf.py",
+      "bytes": 22034,
+      "sha256": "ed0f8eee9611e15cee41c5cf42e6697c4320e1f06d3c957a2618c67cee9c215e"
+    },
+    {
       "path": "code/run_RF_local_QA0_repeated30_20261004.py",
-      "bytes": 22493,
-      "sha256": "c8bcb6925a379cc5c6ca7284f144cafca2893a46732413ca566eb1480eee2b93"
+      "bytes": 22436,
+      "sha256": "c58d04dacb72e913b58fa8ec065b71e8bde84014d2c9900c402c480458abc8e4"
     },
     {
       "path": "code/run_RF_QA01_full22_20261010.py",
@@ -318,8 +328,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6306,
-      "sha256": "5d3eded739a0bb08e2321ee8886352dd8bf011abb239c3013eaeeb37ec9f7cea"
+      "bytes": 7220,
+      "sha256": "b7b45da1f887dd1c91262504b52e6c39013b595995eab272e7d113805a1bbb66"
     },
     {
       "path": "requirements-recorded.txt",
@@ -707,10 +717,32 @@
       "sha256": "2d42bc844ae71f7c4ea65e0b694764b245117a4c3a3bd88a536466663b1e822c"
     },
     {
-      "path": "xgboost_shap_spatial_20260924/rf_legacy_inputs_20260924/rf_drop_P_Ta_20260925/code/run_rf.py",
-      "bytes": 22034,
-      "sha256": "ed0f8eee9611e15cee41c5cf42e6697c4320e1f06d3c957a2618c67cee9c215e"
+      "path": "tests/test_rf_support_paths.py",
+      "bytes": 3195,
+      "sha256": "325cbd8acedbe424579d11fa74d2bda85a8f9bb9418d7f9a3341ade02afe029b"
     }
   ],
-  "scope": "Core scripts and small intermediate results; no RF pixel cohort, raw rasters or models."
+  "scope": "Core scripts and small intermediate results; no RF pixel cohort, raw rasters or models.",
+  "scientific_numerical_logic_unchanged": true,
+  "repository_layout_updated": "2026-10-20",
+  "packaging_changes": {
+    "rf_support_relocated": {
+      "path": "code/rf_support/run_rf.py",
+      "original_sha256": "ed0f8eee9611e15cee41c5cf42e6697c4320e1f06d3c957a2618c67cee9c215e",
+      "byte_identical": true
+    },
+    "path_only_edits": [
+      {
+        "path": "code/run_RF_local_QA0_repeated30_20261004.py",
+        "original_sha256": "c8bcb6925a379cc5c6ca7284f144cafca2893a46732413ca566eb1480eee2b93",
+        "current_sha256": "c58d04dacb72e913b58fa8ec065b71e8bde84014d2c9900c402c480458abc8e4"
+      },
+      {
+        "path": "code/audit_GEE_exports_pre_RF.py",
+        "original_sha256": "5c19872f393be013bdd78e0444936f4cc5bedf90098f0d645fdc1866cea66a2c",
+        "current_sha256": "78eb30d3d570412ea29747979a81c66e7a1ee75e468c72a37acfbb30962c443d"
+      }
+    ],
+    "explanation": "Relocated shared Random Forest support module and made historical-data lookup configurable. Numerical function ASTs and all result tables/figure arrays are unchanged. No models were refitted."
+  }
 }

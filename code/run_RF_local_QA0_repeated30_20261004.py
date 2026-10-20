@@ -24,7 +24,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 ROOT = preparation.OUT
-LEGACY_SCRIPT = preparation.ROOT/'xgboost_shap_spatial_20260924/rf_legacy_inputs_20260924/rf_drop_P_Ta_20260925/code/run_rf.py'
+LEGACY_SCRIPT = Path(__file__).resolve().parent/'rf_support/run_rf.py'
 spec = importlib.util.spec_from_file_location('rf_helpers', LEGACY_SCRIPT)
 legacy = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(legacy)

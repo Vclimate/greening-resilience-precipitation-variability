@@ -4,7 +4,8 @@ Scientific processing, analysis and plotting code, with small intermediate resul
 
 ## Included
 
-- `code/`: the scientific scripts and their local dependencies, preserved byte for byte from the analysis workspace.
+- `code/`: the scientific scripts and their local dependencies. Numerical routines are preserved; shared-module and optional historical-input paths were clarified for this public layout.
+- `code/rf_support/`: Random Forest helper functions used by the primary repeated-refit and spatial-validation scripts. The published attribution workflow uses RF, Bayesian TPE tuning, OOB permutation importance and probability PDPs, not XGBoost or SHAP.
 - `source_data/`: regional trajectories, OLS/HAC statistics, area fractions, RF summaries, VIF retention, PDP curves, lag/window/EVI comparisons, exploratory ENSO results, and spatial-validation tables.
 - `figure_inputs/`: compact MATLAB input arrays and the actual unscaled interval arrays used for the main figures.
 - `metadata/`: predictor definitions, input templates, recorded software versions and selected verification records.
@@ -40,6 +41,8 @@ The integrity check uses the Python standard library. Only small result tables a
 
 The original calculations used Windows and the package versions in `requirements-recorded.txt`. Scripts retain historical QA0 helper names and some author-machine paths. These support modules are invoked by the QA01 entry points with the approved current settings. The path inventory documents required adaptation. Native MATLAB requires a licensed installation; map scripts use Natural Earth coastlines. This is an auditable source snapshot, not a claim of a fresh end-to-end reproduction on every platform.
 
+The shared RF module is loaded from `code/rf_support/run_rf.py`, relative to the calling script rather than an author-machine experiment directory. The optional pre-RF historical-input comparison requires `analysis.parquet` under `input/historical_rf_inputs/`, or a directory selected with the `JRS_HISTORICAL_RF_INPUTS` environment variable. That historical input table is not included in this lightweight release and is not the primary QA01 training cohort.
+
 ## Interpretation and uncertainty
 
 Precipitation variability remains among important predictors, but ranks are conditional on the chosen cohort, period and importance estimator. Random-holdout accuracy measures within-grid interpolation. The spatial five-fold analysis uses 500 km projected blocks without a minimum-distance buffer and does not eliminate all spatial dependence. Thirty-refit ranges and block-bootstrap intervals do not represent complete training uncertainty. Regional HAC does not correct individual pixel OLS tests or their derived area fractions. EVI and higher lags reveal sensitivity rather than universal agreement; ENSO results do not establish event causation.
@@ -48,4 +51,4 @@ Fig. 1d and Fig. 2 use fivefold display magnification of interval half-widths, a
 
 ## Verification
 
-Scientific source copies are hash-checked; new packaging helpers receive syntax and data-value checks. This upload does not rerun the global satellite preprocessing or RF training. File hashes and the selected numerical verification records are provided for traceability.
+Scientific source copies are hash-checked; packaging changes are recorded in `source_manifest.json`. Run `python -m unittest discover -s tests` to check the renamed RF dependency and its small, data-independent helper examples. This upload does not rerun the global satellite preprocessing or RF training. File hashes and the selected numerical verification records are provided for traceability.

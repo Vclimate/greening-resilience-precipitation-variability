@@ -19,7 +19,7 @@ from rasterio.windows import Window
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'input/GEE_recomputed_20260927'
 OUT = DEST / 'pre_RF_audit'
-LEGACY = ROOT / 'xgboost_shap_spatial_20260924/rf_legacy_inputs_20260924'
+HISTORICAL_RF_INPUTS = Path(os.environ.get('JRS_HISTORICAL_RF_INPUTS', ROOT / 'input/historical_rf_inputs'))
 SOURCES = {
     'ERA5': Path('C:/Users/user/Downloads/JRS_ERA5_all_bilinear_005_recomputed'),
     'nonERA5': Path('C:/Users/user/Downloads/JRS_nonERA5_public_005_recomputed'),
@@ -83,7 +83,7 @@ def main():
     table('archive_manifest.csv', manifest)
     print(f'Archived and SHA256 verified: {len(manifest)} files', flush=True)
 
-    old = pd.read_parquet(LEGACY / 'rf_drop_P_Ta_20260925/data/analysis.parquet')
+    old = pd.read_parquet(HISTORICAL_RF_INPUTS / 'analysis.parquet')
     candidate = old.copy()
     corrected = pd.read_parquet(ROOT / 'input/Species_nodata_corrected_20260926/analysis_species_corrected_all_rows.parquet')
     assert old.pixel_id.is_unique and corrected.pixel_id.is_unique
@@ -240,7 +240,7 @@ def main():
             dictionary.append(dict(variable=name, path=str(predictors[name]), units=SPECS[name][0], period=period,
                 processing='native metric then bilinear' if period != 'static' else 'native metric then valid-area mean'))
         else:
-            source = ROOT / 'input/Species_nodata_corrected_20260926/Species_sum_nodata_corrected.mat' if name == 'Species' else LEGACY / 'rf_drop_P_Ta_20260925/data/analysis.parquet'
+            source = ROOT / 'input/Species_nodata_corrected_20260926/Species_sum_nodata_corrected.mat' if name == 'Species' else HISTORICAL_RF_INPUTS / 'analysis.parquet'
             dictionary.append(dict(variable=name, path=str(source), units='see approved source manifest', period='legacy retained', processing='no new resampling'))
     table('candidate_data_dictionary.csv', dictionary)
     checks['cohort'] = counts
